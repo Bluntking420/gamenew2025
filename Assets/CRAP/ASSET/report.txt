@@ -1,0 +1,39 @@
+
+──────────────────────────────────────────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.1.0 ──
+
+                                                                      
+          Filename:  │ C:/Users/Admin/Documents/map1.terrain          
+    Build Location:  │ C:\Users\Admin\Documents\Gaea\Builds\map1\001  
+        Build Type:  │ Standard                                       
+  Build Resolution:  │ 1024 × 1024                                    
+     Build Profile:  │ None / Last Saved Settings                     
+             Nodes:  │ 10 to build                                    
+                     │ 03 to export                                   
+                                                                      
+
+──────────────────────────────────────────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.1.0 ──
+
+                                                                      
+          Filename:  │ C:/Users/Admin/Documents/map1.terrain          
+    Build Location:  │ C:\Users\Admin\Documents\Gaea\Builds\map1\001  
+        Build Type:  │ Standard                                       
+  Build Resolution:  │ 1024 × 1024                                    
+     Build Profile:  │ None / Last Saved Settings                     
+             Nodes:  │ 10 to build                                    
+                     │ 03 to export                                   
+                                                                      
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────── Build Report ──
+
+              Build Results                             Statistics              
+                                                                                
+          Result: │ Success                  Mountain │ 0:00:01.648             
+      Resolution: │ 1024                      Erosion │ 0:00:00.296             
+      Node Count: │ 10                          Ridge │ 0:00:00.202             
+      Start Time: │ 03/25/2025 02:29:59        SatMap │ 0:00:00.114             
+        End Time: │ 03/25/2025 02:30:02               │                         
+        Duration: │ 00:00:02.8510613          Fastest │ SatMap @ 0:00:00        
+  Non-Build Time: │ 00:00:00.5550613          Slowest │ Mountain @ 0:00:01.648  
+                                                                                
+                                               * nodes that took <100ms are     
+                                                         excluded.              

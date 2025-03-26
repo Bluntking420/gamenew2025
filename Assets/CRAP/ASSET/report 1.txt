@@ -1,0 +1,39 @@
+
+──────────────────────────────────────────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.1.0 ──
+
+                                                                      
+          Filename:  │ C:/Users/Admin/Documents/map1.terrain          
+    Build Location:  │ C:\Users\Admin\Documents\Gaea\Builds\map1\001  
+        Build Type:  │ Standard                                       
+  Build Resolution:  │ 1024 × 1024                                    
+     Build Profile:  │ None / Last Saved Settings                     
+             Nodes:  │ 11 to build                                    
+                     │ 04 to export                                   
+                                                                      
+390 - Mixer - failed!
+
+──────────────────────────────────────────────────────────────────────────────────────────  GAEA BUILD SWARM  2.1.1.0 ──
+
+                                                                      
+          Filename:  │ C:/Users/Admin/Documents/map1.terrain          
+    Build Location:  │ C:\Users\Admin\Documents\Gaea\Builds\map1\001  
+        Build Type:  │ Standard                                       
+  Build Resolution:  │ 1024 × 1024                                    
+     Build Profile:  │ None / Last Saved Settings                     
+             Nodes:  │ 11 to build                                    
+                     │ 04 to export                                   
+                                                                      
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────── Build Report ──
+
+              Build Results                             Statistics             
+                                                                               
+          Result: │ Success                  Mountain │ 0:00:01.71             
+      Resolution: │ 1024                      Erosion │ 0:00:00.328            
+      Node Count: │ 11                          Ridge │ 0:00:00.366            
+      Start Time: │ 03/25/2025 02:49:11               │                        
+        End Time: │ 03/25/2025 02:49:16       Fastest │ SatMap @ 0:00:00       
+        Duration: │ 00:00:04.8572730          Slowest │ Mountain @ 0:00:01.71  
+  Non-Build Time: │ 00:00:02.3432730                                           
+                                              * nodes that took <100ms are     
+                                                        excluded.              
