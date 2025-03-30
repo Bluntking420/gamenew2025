@@ -33,6 +33,7 @@ public class ThirdPersonMovement : MonoBehaviour
         // Sprinting
         float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed;
         bool isSprinting = Input.GetKey(KeyCode.LeftShift) && direction.magnitude >= 0.1f;
+        animator.SetFloat("Speed", 1f);
 
         // Move player
         if (direction.magnitude >= 0.1f)
@@ -41,6 +42,7 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+            animator.SetFloat("Speed", 0.5f);
         }
 
         // Jumping
@@ -54,8 +56,6 @@ public class ThirdPersonMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        // Update animations
-        animator.SetBool("isWalking", direction.magnitude >= 0.1f && !isSprinting);
-        animator.SetBool("isSprinting", isSprinting);
+     
     }
 }
