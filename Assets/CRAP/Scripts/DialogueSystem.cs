@@ -7,9 +7,12 @@ public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueBox;
     public TMP_Text dialogueText;
+    public float typingSpeed = 0.05f;
 
     private Queue<string> dialogueLines;
     private bool isDialogueActive = false;
+    private Coroutine typingCoroutine;
+    private string currentLine;
 
     void Start()
     {
@@ -21,7 +24,16 @@ public class DialogueManager : MonoBehaviour
     {
         if (isDialogueActive && Input.GetKeyDown(KeyCode.Return))
         {
-            DisplayNextLine();
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+                typingCoroutine = null;
+                dialogueText.text = currentLine; // Instantly display full text
+            }
+            else
+            {
+                DisplayNextLine();
+            }
         }
     }
 
@@ -44,7 +56,25 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        dialogueText.text = dialogueLines.Dequeue();
+
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+
+        currentLine = dialogueLines.Dequeue();
+        typingCoroutine = StartCoroutine(TypeText(currentLine));
+    }
+
+    IEnumerator TypeText(string text)
+    {
+        dialogueText.text = "";
+        foreach (char letter in text)
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+        typingCoroutine = null;
     }
 
     void EndDialogue()
